@@ -11,7 +11,7 @@ TEST(DivTest, DivZeroCheck) {
 	Op* left = new Op(0);
 	Op* right = new Op(0);
 	Div* test = new Div(left, right);
-	EXPECT_EQ(test->evaluate(); -1); //should be invalid??
+	EXPECT_EQ(test->evaluate(), -1); //should be invalid??
 }
 
 //dividing multiples of each other

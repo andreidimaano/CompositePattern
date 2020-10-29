@@ -22,17 +22,17 @@ TEST(OpTest, OpEvaluateNegative) {
 
 TEST(OpTest, OpEvaluatePositiveDouble) {
     Op* test = new Op(1.1);
-    EXPECT_NEAR(test->evaluate(), 1.1);
+    EXPECT_DOUBLE_EQ(test->evaluate(), 1.1);
 }
 
 TEST(OpTest, OpEvaluateZeroDouble) {
     Op* test = new Op(0.0);
-    EXPECT_NEAR(test->evaluate(), 0.0);
+    EXPECT_DOUBLE_EQ(test->evaluate(), 0.0);
 }
 
 TEST(OpTest, OpEvaluateNegativeDouble) {
     Op* test = new Op(-0.1);
-    EXPECT_NEAR(test->evaluate(), -0.1);
+    EXPECT_DOUBLE_EQ(test->evaluate(), -0.1);
 }
 
 

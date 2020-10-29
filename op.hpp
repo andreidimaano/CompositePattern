@@ -5,9 +5,9 @@
 
 class Op : public Base {
     public:
-        Op(double value) : Base() {}
-        virtual double evaluate(){ return 0.0; }
-        virtual std::string stringify() { return ""; }
+        Op(double value);
+        virtual double evaluate();
+        virtual std::string stringify();
 
    private:
 	double value;

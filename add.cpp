@@ -10,5 +10,5 @@ double Add::evaluate() {
 }
 
 std::string Add::stringify() {
-  return (this->left->stringify() + " - " + this->right->stringify());
+  return (this->left->stringify() + " + " + this->right->stringify());
 }

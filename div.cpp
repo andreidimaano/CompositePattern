@@ -6,7 +6,7 @@ Div::Div(Base* left, Base* right) : Base() {
 }
 
 double Div::evaluate() {
-  if(this->right->evaluate()){
+  if(this->right->evaluate() == 0){
     return -1;
   }
 

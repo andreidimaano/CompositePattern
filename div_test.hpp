@@ -30,13 +30,36 @@ TEST(DivTest, DivWholeNumString) {
 	EXPECT_EQ(test->stringify(), str);
 }
 
+//repeating dec
+TEST(DivTest, DivWholeNum) {
+	Op* left = new Op(5.6);
+	Op* right = new Op(2.4);
+	Div* test = new Div(left, right);
+	EXPECT_EQ(test->evaluate(), 2.333);
+}
+
+TEST(DivTest, DivWholeNumString) {
+	Op* left = new Op(5.6);
+	Op* right = new Op(2.4);
+	Div* test = new Div(left, right);
+	std::string str = "5.600000 / 2.400000";
+	EXPECT_EQ(test->stringify(), str);
+}
+
 //testing fractions
-TEST(DivTest, DivFraction){
+TEST(DivTest, DivFractionStrring){
 	Op* left = new Op(1);
 	Op* right = new Op(2);
 	Div* test = new Div(left, right);
 	std::string str = "1.000000 / 2.000000";	
 	EXPECT_EQ(test->stringify(), str);
+}
+
+TEST(DivTest, DivFraction){
+	Op* left = new Op(1);
+	Op* right = new Op(2);
+	Div* test = new Div(left, right);
+	EXPECT_DOUBLE_EQ(test->evaluate(), 0.5);
 }
 
 #endif 

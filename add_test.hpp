@@ -31,7 +31,7 @@ TEST(ClassAdditionTest, AddEvaluatePosNeg) {
 }
 
 TEST(ClassAdditionTest, AddEvaluatePosNegString) {
-    Op* left = new Op(10.0);
+    Op* left = new Op(-10.0);
     Op* right = new Op(20.0);
     Add* test = new Add(left, right);
     std::string str = "-10.000000 + 20.000000";

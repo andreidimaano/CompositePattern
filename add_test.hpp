@@ -1,5 +1,5 @@
-#ifndef __Add_TEST_HPP__
-#define __Add_TEST_HPP__
+#ifndef __CLASS_ADD_TEST__
+#define __CLASS_ADD_TEST__
 
 #include "gtest/gtest.h"
 
@@ -23,14 +23,14 @@ TEST(ClassAdditionTest, AddEvaluateNonZeroString) {
 }
 
 //1 pos, 1 neg
-TEST(ClassAdditionTest, AddEvaluateNonZero) {
+TEST(ClassAdditionTest, AddEvaluatePosNeg) {
     Op* left = new Op(-10.0);
     Op* right = new Op(20.0);
     Add* test = new Add(left, right);
     EXPECT_DOUBLE_EQ(test->evaluate(), 10.0);
 }
 
-TEST(ClassAdditionTest, AddEvaluateNonZeroString) {
+TEST(ClassAdditionTest, AddEvaluatePosNegString) {
     Op* left = new Op(10.0);
     Op* right = new Op(20.0);
     Add* test = new Add(left, right);

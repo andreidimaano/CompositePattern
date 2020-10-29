@@ -1,0 +1,16 @@
+#include "div.hpp"
+
+Div::Div() : Base() {};
+
+Div::Div(Base* left, Base* right) : Base() {
+  this->left = left;
+  this->right = right;
+}
+
+double Div::evaluate() {
+  return this->left->evaluate() / this->right->evaluate();
+}
+
+std::string Div::stringify() {
+  return (this->left->stringify() + " / " + this->right->stringify());
+}

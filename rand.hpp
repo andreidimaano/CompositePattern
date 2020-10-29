@@ -6,6 +6,7 @@
 class Rand : public Base
 {
     public:
+   
           Rand();
           double evaluate() override;
           std::string stringify() override;

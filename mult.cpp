@@ -6,7 +6,7 @@ Mult::Mult(Base* left, Base* right) : Base() {
 }
 
 double Mult::evaluate() {
-  return this->left->evaluate() / this->right->evaluate();
+  return this->left->evaluate() * this->right->evaluate();
 }
 
 std::string Mult::stringify() {

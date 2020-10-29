@@ -31,14 +31,14 @@ TEST(DivTest, DivWholeNumString) {
 }
 
 //repeating dec
-TEST(DivTest, DivWholeNum) {
+TEST(DivTest, DivDouble) {
 	Op* left = new Op(5.6);
 	Op* right = new Op(2.4);
 	Div* test = new Div(left, right);
-	EXPECT_EQ(test->evaluate(), 2.333);
+	EXPECT_DOUBLE_EQ(test->evaluate(), 5.6/2.4);
 }
 
-TEST(DivTest, DivWholeNumString) {
+TEST(DivTest, DivDoubleString) {
 	Op* left = new Op(5.6);
 	Op* right = new Op(2.4);
 	Div* test = new Div(left, right);

@@ -60,7 +60,7 @@ TEST(MultTest, MultWholeNumAdd) {
 }
 
 //Whole using Two Add as an op
-TEST(MultTest, MultWholeNumAddString) {
+TEST(MultTest, MultWholeNumTwoAddString) {
 	Op* addOne = new Op(10);
     Op* addTwo = new Op(10);
     Op* rightOne = new Op(10);
@@ -72,7 +72,7 @@ TEST(MultTest, MultWholeNumAddString) {
 	EXPECT_EQ(test->stringify(), str);
 }
 
-TEST(MultTest, MultWholeNumAddString) {
+TEST(MultTest, MultWholeNumTwoAdd) {
 	Op* addOne = new Op(10); Op* addTwo = new Op(10);
     Op* rightOne = new Op(10); Op* rightTwo = new Op(10);
     Add* left = new Add(addOne, addTwo); Add* right = new Add(rightOne, rightTwo);
@@ -89,8 +89,8 @@ TEST(MultTest, MultDouble) {
 }
 
 TEST(MultTest, MultDoubleString) {
-	Op* left = new Op(10);
-	Op* right = new Op(5);
+	Op* left = new Op(10.5);
+	Op* right = new Op(5.5);
 	Mult* test = new Mult(left, right);
 	std::string str = "10.500000 * 5.500000";
 	EXPECT_EQ(test->stringify(), str);
@@ -117,7 +117,7 @@ TEST(MultTest, MultDoubleNumAdd) {
 }
 
 //Double using Two Add as an op
-TEST(MultTest, MultDoubleAddString) {
+TEST(MultTest, MultDoubleTwoAddString) {
 	Op* addOne = new Op(10.5);
     Op* addTwo = new Op(10.5);
     Op* rightOne = new Op(10.5);
@@ -129,7 +129,7 @@ TEST(MultTest, MultDoubleAddString) {
 	EXPECT_EQ(test->stringify(), str);
 }
 
-TEST(MultTest,MultDoubleAddString) {
+TEST(MultTest,MultDoubleTwoAdd) {
 	Op* addOne = new Op(10.5); Op* addTwo = new Op(10.5);
     Op* rightOne = new Op(10.5); Op* rightTwo = new Op(10.5);
     Add* left = new Add(addOne, addTwo); Add* right = new Add(rightOne, rightTwo);

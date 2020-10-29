@@ -12,7 +12,7 @@ ADD_EXECUTABLE(test
         rand.cpp
         op.cpp
         add.cpp
-        mult_test.cpp
+        mult.cpp
 )
 
 TARGET_LINK_LIBRARIES(test gtest)

@@ -7,14 +7,14 @@
 #include "op.hpp"
 
 //2 non zero values
-TEST(AddFunctionTest, AddEvaluateNonZero) {
+TEST(ClassAdditionTest, AddEvaluateNonZero) {
     Op* left = new Op(10.0);
     Op* right = new Op(20.0);
     Add* test = new Add(left, right);
     EXPECT_DOUBLE_EQ(test->evaluate(), 30.0);
 }
 
-TEST(AddFunctionTest, AddEvaluateNonZeroString) {
+TEST(ClassAdditionTest, AddEvaluateNonZeroString) {
     Op* left = new Op(10.0);
     Op* right = new Op(20.0);
     Add* test = new Add(left, right);
@@ -23,14 +23,14 @@ TEST(AddFunctionTest, AddEvaluateNonZeroString) {
 }
 
 //1 pos, 1 neg
-TEST(AddFunctionTest, AddEvaluateNonZero) {
+TEST(ClassAdditionTest, AddEvaluateNonZero) {
     Op* left = new Op(-10.0);
     Op* right = new Op(20.0);
     Add* test = new Add(left, right);
     EXPECT_DOUBLE_EQ(test->evaluate(), 10.0);
 }
 
-TEST(AddFunctionTest, AddEvaluateNonZeroString) {
+TEST(ClassAdditionTest, AddEvaluateNonZeroString) {
     Op* left = new Op(10.0);
     Op* right = new Op(20.0);
     Add* test = new Add(left, right);

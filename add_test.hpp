@@ -3,18 +3,18 @@
 
 #include "gtest/gtest.h"
 
-#include "Add.hpp"
+#include "add.hpp"
 #include "op.hpp"
 
 //2 non zero values
-TEST(AddTest, AddEvaluateNonZero) {
+TEST(AddFunctionTest, AddEvaluateNonZero) {
     Op* left = new Op(10.0);
     Op* right = new Op(20.0);
     Add* test = new Add(left, right);
     EXPECT_DOUBLE_EQ(test->evaluate(), 30.0);
 }
 
-TEST(AddTest, AddEvaluateNonZeroString) {
+TEST(AddFunctionTest, AddEvaluateNonZeroString) {
     Op* left = new Op(10.0);
     Op* right = new Op(20.0);
     Add* test = new Add(left, right);
@@ -23,14 +23,14 @@ TEST(AddTest, AddEvaluateNonZeroString) {
 }
 
 //1 pos, 1 neg
-TEST(AddTest, AddEvaluateNonZero) {
+TEST(AddFunctionTest, AddEvaluateNonZero) {
     Op* left = new Op(-10.0);
     Op* right = new Op(20.0);
     Add* test = new Add(left, right);
     EXPECT_DOUBLE_EQ(test->evaluate(), 10.0);
 }
 
-TEST(AddTest, AddEvaluateNonZeroString) {
+TEST(AddFunctionTest, AddEvaluateNonZeroString) {
     Op* left = new Op(10.0);
     Op* right = new Op(20.0);
     Add* test = new Add(left, right);

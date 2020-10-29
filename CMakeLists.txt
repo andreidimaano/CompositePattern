@@ -10,6 +10,7 @@ ADD_EXECUTABLE(test
         unit_test.cpp
         rand.cpp
         op.cpp
+        add.cpp
 )
 
 TARGET_LINK_LIBRARIES(test gtest)

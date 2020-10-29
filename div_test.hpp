@@ -37,5 +37,6 @@ TEST(DivTest, DivFraction){
 	Div* test = new Div(left, right);
 	std::string str = "1.000000 / 2.000000";	
 	EXPECT_EQ(test->stringify(), str);
+}
 
 #endif 

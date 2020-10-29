@@ -11,6 +11,7 @@ ADD_EXECUTABLE(test
 	div.cpp
         rand.cpp
         op.cpp
+        add.cpp
 )
 
 TARGET_LINK_LIBRARIES(test gtest)

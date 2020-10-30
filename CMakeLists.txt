@@ -2,10 +2,18 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 
 ADD_SUBDIRECTORY(googletest)
 
+
 SET(CMAKE_CXX_STANDARD 11)
+
 
 ADD_EXECUTABLE(test
         unit_test.cpp
+	div.cpp
+        rand.cpp
+        op.cpp
+        add.cpp
+        mult.cpp
+	sub.cpp
 )
 
 TARGET_LINK_LIBRARIES(test gtest)

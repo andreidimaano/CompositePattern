@@ -1,7 +1,5 @@
 #include "sub.hpp"
 
-Sub::Sub() : Base() {};
-
 Sub::Sub(Base* left, Base* right) : Base() {
   this->left = left;
   this->right = right;

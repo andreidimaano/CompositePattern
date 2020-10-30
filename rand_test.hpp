@@ -6,13 +6,18 @@
 #include "rand.hpp"
 
 TEST(RandTest, RandLowerCheck) {
-	Rand* test = new Rand();
+	Base* test = new Rand();
 	EXPECT_LE(0, test->evaluate());
 }
 
 TEST(RandTest, RandUpperCheck) {
-	Rand* test = new Rand();
+	Base* test = new Rand();
 	EXPECT_LT(test->evaluate(), 100);
+}
+
+TEST(RandTest, RandUpperCheckString) {
+	Base* test = new Rand();
+	EXPECT_EQ(test->stringify(), std::to_string(test->evaluate());
 }
 
 #endif 

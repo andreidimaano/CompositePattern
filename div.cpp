@@ -6,10 +6,14 @@ Div::Div(Base* left, Base* right) : Base() {
 }
 
 double Div::evaluate() {
+  if(this->right->evaluate() == 0){
+    return -1;
+  }
+
   return this->left->evaluate() / this->right->evaluate();
 }
 
 std::string Div::stringify() {
-  return (this->left->std::stringify() + " / " + this->right->std::stringify());
+  return (this->left->stringify() + " / " + this->right->stringify());
 }
 

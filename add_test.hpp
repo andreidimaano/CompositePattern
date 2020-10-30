@@ -8,32 +8,32 @@
 
 //2 non zero values
 TEST(ClassAdditionTest, AddEvaluateNonZero) {
-    Op* left = new Op(10.0);
-    Op* right = new Op(20.0);
-    Add* test = new Add(left, right);
+    Base* left = new Op(10.0);
+    Base* right = new Op(20.0);
+    Base* test = new Add(left, right);
     EXPECT_DOUBLE_EQ(test->evaluate(), 30.0);
 }
 
 TEST(ClassAdditionTest, AddEvaluateNonZeroString) {
-    Op* left = new Op(10.0);
-    Op* right = new Op(20.0);
-    Add* test = new Add(left, right);
+    Base* left = new Op(10.0);
+    Base* right = new Op(20.0);
+    Base* test = new Add(left, right);
     std::string str = "10.000000 + 20.000000";
     EXPECT_EQ(test->stringify(), str);
 }
 
 //1 pos, 1 neg
 TEST(ClassAdditionTest, AddEvaluatePosNeg) {
-    Op* left = new Op(-10.0);
-    Op* right = new Op(20.0);
-    Add* test = new Add(left, right);
+    Base* left = new Op(-10.0);
+    Base* right = new Op(20.0);
+    Base* test = new Add(left, right);
     EXPECT_DOUBLE_EQ(test->evaluate(), 10.0);
 }
 
 TEST(ClassAdditionTest, AddEvaluatePosNegString) {
-    Op* left = new Op(-10.0);
-    Op* right = new Op(20.0);
-    Add* test = new Add(left, right);
+    Base* left = new Op(-10.0);
+    Base* right = new Op(20.0);
+    Base* test = new Add(left, right);
     std::string str = "-10.000000 + 20.000000";
     EXPECT_EQ(test->stringify(), str);
 }

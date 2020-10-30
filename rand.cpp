@@ -1,6 +1,8 @@
 #include "rand.hpp"
+#include <ctime>
 
 Rand::Rand() : Base() {
+  srand(time(0));
   this->value = rand() % 100;
 };
 

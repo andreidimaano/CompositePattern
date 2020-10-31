@@ -1,8 +1,9 @@
 #include "gtest/gtest.h"
 
 #include "op_test.hpp"
-//#include "rand_test.hpp"
-//#include "div_test.hpp"
+#include "class_sub_test.hpp"
+#include "rand_test.hpp"
+#include "div_test.hpp"
 #include "add_test.hpp"
 #include "mult_test.hpp"
 

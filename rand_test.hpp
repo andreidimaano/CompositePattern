@@ -17,7 +17,8 @@ TEST(RandTest, RandUpperCheck) {
 
 TEST(RandTest, RandUpperCheckString) {
 	Base* test = new Rand();
-	EXPECT_EQ(test->stringify(), std::to_string(test->evaluate());
+	std::string str = std::to_string(test->evaluate());
+	EXPECT_EQ(test->stringify(), str);
 }
 
 #endif 

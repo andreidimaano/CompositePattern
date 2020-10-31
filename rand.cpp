@@ -4,7 +4,7 @@
 Rand::Rand() : Base() {
   srand(time(0));
   this->value = rand() % 100;
-};
+}
 
 double Rand::evaluate() {
   return this->value;

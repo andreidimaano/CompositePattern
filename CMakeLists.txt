@@ -15,6 +15,18 @@ ADD_EXECUTABLE(test
         add.cpp
         mult.cpp
 	div.cpp
+	pow.cpp
+)
+
+ADD_EXECUTABLE(lab
+	main.cpp
+	sub.cpp
+	rand.cpp
+	op.cpp
+	add.cpp
+	mult.cpp
+	div.cpp
+	pow.cpp
 )
 
 TARGET_LINK_LIBRARIES(test gtest)

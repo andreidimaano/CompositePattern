@@ -18,6 +18,7 @@ TEST(ClassSubtractionTest, SubEvaluateNonZeroString) {
 	Base* left = new Op (10.0);
 	Base* right = new Op(20.0);
 	Base* test = new Sub(left, right);
+	std::string str = "10.000000 - 20.000000";
 	EXPECT_EQ(test->stringify(), str);
 }
 
@@ -34,7 +35,7 @@ TEST(ClassSubtractionTest, SubEvaluatePosNegString){
 	Base* right = new Op(20.0);
 	Base* test = new Sub(left, right);
 	std::string str = "-10.000000 - 20.000000";
-	EXPECT_EQ(test->stringify(),str);
+	EXPECT_EQ(test->stringify(), str);
 }
 
 

@@ -1,10 +1,10 @@
 #include "rand.hpp"
-#include <ctime>
+//#include <ctime>
 
 Rand::Rand() : Base() {
-  srand(time(0));
+  //srand(time(0));
   this->value = rand() % 100;
-};
+}
 
 double Rand::evaluate() {
   return this->value;

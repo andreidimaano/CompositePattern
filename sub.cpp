@@ -9,7 +9,7 @@ double Sub::evaluate() {
   return this->left->evaluate() - this->right->evaluate();
 }
 
-std::string Div::stringify() {
+std::string Sub::stringify() {
   return (this->left->stringify() + " - " + this->right->stringify());
 }
 

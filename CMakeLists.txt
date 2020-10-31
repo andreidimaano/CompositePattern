@@ -7,12 +7,7 @@ SET(CMAKE_CXX_STANDARD 11)
 
 
 ADD_EXECUTABLE(test
-        unit_test.cpp
-	div.cpp
-        rand.cpp
-        op.cpp
-        add.cpp
-        mult.cpp
+        unit_test.cpp	
 	sub.cpp
 )
 
